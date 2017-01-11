@@ -219,7 +219,7 @@ export default {
       type: this.type
     }
     if (!this.disabled) domProps.tabIndex = this.tabIndex
-    return h(this.href ? 'a' : this.containerElement ? this.containerElement : 'button', {
+    return h(this.href ? 'a' : this.containerElement ? this.containerElement : 'span', {
       class: this.buttonClass,
       domProps: domProps,
       style: {

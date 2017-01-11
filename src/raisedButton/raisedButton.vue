@@ -135,6 +135,7 @@ export default {
 <style lang="less">
 @import "../styles/import.less";
 .mu-raised-button {
+  vertical-align: middle;
   display: inline-block;
   overflow: hidden;
   position: relative;

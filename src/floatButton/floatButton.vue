@@ -90,6 +90,7 @@ export default {
 <style lang="less">
 @import "../styles/import.less";
 .mu-float-button {
+  vertical-align: middle;
   position: relative;
   display: inline-block;
   overflow: visible;
