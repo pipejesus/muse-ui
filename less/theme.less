@@ -3,11 +3,6 @@
   color: @appbarTextColor;
 }
 
-.mu-avatar {
-  color: @avatarColor;
-  background-color: @avatarBackgroundColor;
-}
-
 .mu-badge {
   background-color: @badgeColor;
   color: @badgeTextColor;
@@ -141,6 +136,11 @@ a {
   }
 }
 
+.mu-avatar {
+  color: @avatarColor;
+  background-color: @avatarBackgroundColor;
+}
+
 .mu-chip {
   background-color: @chipColor;
   color: @chipTextColor;
@@ -159,6 +159,25 @@ a {
 
 .mu-circular-progress-determinate-path{
   stroke: @circularProgressColor;
+}
+
+.mu-dialog {
+  background-color: @dialogColor;
+}
+
+.mu-dialog-footer,
+.mu-dialog-header {
+  &.scrollable{
+    border-bottom-color: @dialogBorderColor;
+  }
+}
+
+.mu-dialog-title{
+  color: @dialogTitleColor;
+}
+
+.mu-dialog-body {
+  color: @dialogBodyColor
 }
 
 .mu-calendar {
@@ -201,25 +220,6 @@ a {
   .mu-year-button.hover &{
     color: @datePickerSelectColor;
   }
-}
-
-.mu-dialog {
-  background-color: @dialogColor;
-}
-
-.mu-dialog-footer,
-.mu-dialog-header {
-  &.scrollable{
-    border-bottom-color: @dialogBorderColor;
-  }
-}
-
-.mu-dialog-title{
-  color: @dialogTitleColor;
-}
-
-.mu-dialog-body {
-  color: @dialogBodyColor
 }
 
 .mu-dropDown-menu-text {
@@ -361,20 +361,6 @@ a {
 
 .mu-menu-item-right-icon {
   color: @menuRightIconColor;
-}
-
-.mu-pagination-item{
-  color: @paginationTextColor;
-  &.hover {
-    background-color: @paginationHoverBackgroundColor;
-  }
-  &.active {
-    color: @paginationActiveColor;
-    background-color: @paginationActiveBackgroundColor;
-  }
-  &.disabled {
-    color: @paginationDisabledColor;
-  }
 }
 
 .mu-paper {
@@ -741,4 +727,18 @@ a {
 
 .mu-tooltip-ripple.when-shown {
   background-color: @tooltipRippleColor;
+}
+
+.mu-pagination-item{
+  color: @paginationTextColor;
+  &.hover {
+    background-color: @paginationHoverBackgroundColor;
+  }
+  &.active {
+    color: @paginationActiveColor;
+    background-color: @paginationActiveBackgroundColor;
+  }
+  &.disabled {
+    color: @paginationDisabledColor;
+  }
 }
